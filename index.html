@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <label> Amount :R</label>
+    <input id="amount" type="text" min="1" max="1000000" onchange="calculateLoad()">
+    <br>
+    <br>
+    <label>Interest Rate :</label>
+    <input id="interest_rate" type="number" min="0" max="100" value="10" step=".1" onchange="calculateLoad()">
+    <br>
+    <br>
+    <label>Month:</label>
+    <input id="month" type="number" min="1" max="72" value="1" step="1" onchange="calculateLoad()">
+    <h2 id="payment"></h2>
+   </div>
+    <script src="./java/code.js"></script>
+</body>
+</html>
